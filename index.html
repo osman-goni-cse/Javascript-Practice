@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+<body>
+  <h1>This is Javascript</h1>
+  <h3>Initially paragraph does not have element</h3>
+
+  <p id="demo">
+
+  </p>
+  <p id="another-demo">
+
+  </p>
+
+  <button type="button" onclick="document.write(5+6)">
+    Click Me
+  </button>
+
+  <button onclick="window.print()">Print this page</button>
+
+  <script>
+    const fruits = ["apple", "banana", "orange", "mikd"];
+    var html = "<ul>";
+    
+    for(var i = 0; i < fruits.length; i++) {
+      html += `<li> ` + fruits[i] + "</li>";
+    }
+
+    html += `</ul>`;
+
+    document.getElementById("demo").innerHTML = html;
+
+    text = "<ul>";
+    
+    fruits.forEach(myFun);
+
+    function myFun(value) {
+      text += "<li>" + value + "</li>";
+    }
+    text += "</ul>";
+
+    document.getElementById("another-demo").innerHTML = text;
+  </script>
+</body>
+</html>
